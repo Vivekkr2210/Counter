@@ -1,0 +1,61 @@
+[2026-11-15 05:27:43.344] [miter_logger] [info] MiterStrategy::run starting
+[2026-11-15 05:27:43.344] [miter_logger] [info] Collecting POs for design 0: counter
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] Collected 6 PIs for design 0
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] Collected 12 POs for design 0
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] design 0 PI summary by model/term (6 total terminals, 3 unique rows):
+| Model                    | Term | Count |
+|--------------------------|------|-------|
+| sky130_fd_sc_hd__dfxtp_1 | Q    |     4 |
+| counter                  | clk  |     1 |
+| counter                  | rst  |     1 |
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] design 0 PO summary by model/term (12 total terminals, 3 unique rows):
+| Model                    | Term  | Count |
+|--------------------------|-------|-------|
+| counter                  | count |     4 |
+| sky130_fd_sc_hd__dfxtp_1 | CLK   |     4 |
+| sky130_fd_sc_hd__dfxtp_1 | D     |     4 |
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] Collecting POs for design 1: counter
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of common inputs: 6
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of diff0 inputs: 0
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of diff1 inputs: 0
+[2026-11-15 05:27:43.345] [miter_logger] [info] Collected 6 PIs for design 1
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] Collected 12 POs for design 1
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] design 1 PI summary by model/term (6 total terminals, 3 unique rows):
+| Model                    | Term | Count |
+|--------------------------|------|-------|
+| sky130_fd_sc_hd__dfxtp_1 | Q    |     4 |
+| counter                  | clk  |     1 |
+| counter                  | rst  |     1 |
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] design 1 PO summary by model/term (12 total terminals, 3 unique rows):
+| Model                    | Term  | Count |
+|--------------------------|-------|-------|
+| counter                  | count |     4 |
+| sky130_fd_sc_hd__dfxtp_1 | CLK   |     4 |
+| sky130_fd_sc_hd__dfxtp_1 | D     |     4 |
+
+[2026-11-15 05:27:43.345] [miter_logger] [info] normalizeInputs: starting
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of common inputs: 6
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of diff0 inputs: 0
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of diff1 inputs: 0
+[2026-11-15 05:27:43.345] [miter_logger] [info] normalizeOutputs: starting
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of common outputs: 12
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of diff0 outputs: 0
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of diff1 outputs: 0
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of PIs in circuit 0: 6
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of PIs in circuit 1: 6
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of POs in circuit 0: 12
+[2026-11-15 05:27:43.345] [miter_logger] [info] size of POs in circuit 1: 12
+[2026-11-15 05:27:43.346] [miter_logger] [info] Building miter expression
+[2026-11-15 05:27:43.346] [miter_logger] [info] Finished building miter expression
+[2026-11-15 05:27:43.346] [miter_logger] [info] Starting solver
+[2026-11-15 05:27:43.346] [miter_logger] [info] SAT solver finished: UNSAT
+[2026-11-15 05:27:43.346] [miter_logger] [info] Circuits are IDENTICAL

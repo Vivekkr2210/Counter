@@ -1,0 +1,18 @@
+OpenROAD 26Q4-1798-g6932b6296c 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794686642-f366e987.blib
+read_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_1_floorplan.odb
+read_sdc /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_1_floorplan.sdc
+source /home/vivek-kumar/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+No macros found: Skipping macro_placement
+Design area 150 um^2 11% utilization.
+write_sdc -no_timestamp /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_2_floorplan_macro.sdc
+write_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_2_floorplan_macro.odb
+Elapsed time: 0:00.18[h:]min:sec. CPU time: user 0.14 sys 0.04 (99%). Peak memory: 103244KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_2_floorplan_macro    .odb          0        0     1.00      100 fcf9e8055b
+2_2_floorplan_macro    .sdc                                       0976ed7b14

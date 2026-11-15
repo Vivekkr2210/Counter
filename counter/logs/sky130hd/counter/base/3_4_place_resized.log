@@ -1,0 +1,36 @@
+OpenROAD 26Q4-1798-g6932b6296c 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794686642-f366e987.blib
+read_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/3_3_place_gp.odb
+read_sdc /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/3_3_place_gp.sdc
+source /home/vivek-kumar/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+estimate_parasitics
+Perform buffer insertion and gate resizing...
+repair_design -verbose -match_cell_footprint
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |        21
+       10 |     +0.0% |       0 |       0 |             0 |        11
+       20 |     +0.0% |       0 |       0 |             0 |         1
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0504] Runtime: 0.00s
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 188 um^2 14% utilization.
+Instance count before 33, after 33
+Pin count before 52, after 52
+write_sdc -no_timestamp /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/3_4_place_resized.sdc
+write_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/3_4_place_resized.odb
+Elapsed time: 0:00.44[h:]min:sec. CPU time: user 0.34 sys 0.11 (99%). Peak memory: 224572KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_4_place_resized      .odb          0        0     1.02      219 f3984129e0
+3_4_place_resized      .sdc                                       0976ed7b14

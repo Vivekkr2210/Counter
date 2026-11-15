@@ -1,0 +1,22 @@
+OpenROAD 26Q4-1798-g6932b6296c 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794686642-f366e987.blib
+read_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_3_floorplan_tapcell.odb
+read_sdc /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_3_floorplan_tapcell.sdc
+source /home/vivek-kumar/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+[WARNING PDN-1051] No instances found for grid (CORE_macro_grid_1).
+[WARNING PDN-1051] No instances found for grid (CORE_macro_grid_2).
+[INFO PDN-0001] Inserting grid: grid
+[INFO PDN-0500] Runtime: 0.00s
+check_placement -fixed -verbose
+Design area 169 um^2 13% utilization.
+write_sdc -no_timestamp /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_4_floorplan_pdn.sdc
+write_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/2_4_floorplan_pdn.odb
+Elapsed time: 0:00.19[h:]min:sec. CPU time: user 0.15 sys 0.04 (96%). Peak memory: 105352KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_4_floorplan_pdn      .odb          0        0     1.00      102 a59262f2e2
+2_4_floorplan_pdn      .sdc                                       0976ed7b14

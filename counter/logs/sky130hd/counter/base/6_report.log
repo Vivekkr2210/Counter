@@ -1,0 +1,70 @@
+OpenROAD 26Q4-1798-g6932b6296c 
+Features included (+) or not (-): -GPU +GUI
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/objects/binary_libs/sky130hd/sky130_fd_sc_hd__tt_025C_1v80@12800135-1794686642-f366e987.blib
+read_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/6_1_fill.odb
+read_sdc /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/6_1_fill.sdc
+source /home/vivek-kumar/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+write_sdc -no_timestamp /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/6_final.sdc
+write_db /home/vivek-kumar/OpenROAD-flow-scripts/my_projects/counter/results/sky130hd/counter/base/6_final.odb
+Deleted 0 routing obstructions
+Warning: master sky130_ef_sc_hd__decap_12 has signal pins but no liberty cell
+Warning: master sky130_ef_sc_hd__decap_12 has signal pins but no liberty cell
+Elapsed time: 0:00.15[h:]min:sec. CPU time: user 0.14 sys 0.01 (95%). Peak memory: 19624KB.
+Global output passed lec test
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /home/vivek-kumar/OpenROAD-flow-scripts/flow/platforms/sky130hd/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation counter (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 59 rc segments
+[INFO RCX-0439] Coupling Cap extraction counter ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 66% of 139 wires extracted
+[INFO RCX-0442] 100% of 139 wires extracted
+[INFO RCX-0045] Extract 24 nets, 83 rsegs, 83 caps, 65 ccs
+[INFO RCX-0443] 24 nets finished
+[INFO PSM-0040] All shapes on net VDD are connected.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Total power      : 1.98e-05 W
+Supply voltage   : 1.80e+00 V
+Worstcase voltage: 1.80e+00 V
+Average voltage  : 1.80e+00 V
+Average IR drop  : 6.37e-06 V
+Worstcase IR drop: 3.62e-05 V
+Percentage drop  : 0.00 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Total power      : 1.98e-05 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 3.46e-05 V
+Average voltage  : 6.54e-06 V
+Average IR drop  : 6.54e-06 V
+Worstcase IR drop: 3.46e-05 V
+Percentage drop  : 0.00 %
+######################################
+Cell type report:                       Count       Area
+  Fill cell                               160    1139.84
+  Tap cell                                 15      18.77
+  Clock buffer                              3      22.52
+  Timing Repair Buffer                      5      18.77
+  Sequential cell                           4      80.08
+  Multi-Input combinational cell            9      70.07
+  Total                                   196    1350.04
+Report metrics stage 6, finish...
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 210 um^2 16% utilization.
+[WARNING GUI-0076] Could not find the Qt platform plugin "wayland" in ""
+Elapsed time: 0:01.11[h:]min:sec. CPU time: user 0.99 sys 0.15 (102%). Peak memory: 167676KB.
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+6_report                             0        0     1.00       19 N/A

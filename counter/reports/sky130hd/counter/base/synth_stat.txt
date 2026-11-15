@@ -1,0 +1,31 @@
+
+23. Printing statistics.
+
+=== counter ===
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+       13        -       13        - wires
+       16        -       16        - wire bits
+        3        -        3        - public wires
+        6        -        6        - public wire bits
+        3        -        3        - ports
+        6        -        6        - port bits
+        -        -        -        - memories
+        -        -        -        - memory bits
+        -        -        -        - processes
+       13  150.144       13  150.144 cells
+        4   80.077        4   80.077   sky130_fd_sc_hd__dfxtp_1
+        1   12.512        1   12.512   sky130_fd_sc_hd__ha_1
+        1   15.014        1   15.014   sky130_fd_sc_hd__mux2_4
+        1    10.01        1    10.01   sky130_fd_sc_hd__nand3_2
+        3   11.261        3   11.261   sky130_fd_sc_hd__nor2_1
+        2   12.512        2   12.512   sky130_fd_sc_hd__nor2b_1
+        1    8.758        1    8.758   sky130_fd_sc_hd__xnor2_1
+
+   Chip area for module '\counter': 150.144000
+     of which used for sequential elements: 80.076800 (53.33%)
+
